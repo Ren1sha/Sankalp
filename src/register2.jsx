@@ -11,14 +11,14 @@ const Register = () => {
       {/* Header Image */}
       <div className="w-full flex justify-center">
         <img 
-          src="/components/Group 16.png" 
+          src="/components/Group 124.png" 
           alt="Code Crusade 3.0" 
           className="max-w-full md:w-2/3 lg:w-1/2 h-auto mx-auto"
         />
       </div>
 
       {/* Content Section */}
-      <div className="container mx-auto flex flex-col md:flex-row gap-8 mt-10 w-full">
+      <div className="container mx-auto flex flex-col md:flex-row gap-8 mt-3 w-full">
         {/* Left Section - Event Info */}
         <div className="bg-[#693B14] text-white p-6 rounded-lg shadow-lg w-full md:w-1/3">
           <h2 className="text-xl font-bold text-orange-400">
