@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Sankalp2025 from "./Sankalp2025";
-import Register from "./Register";
+import Register from "./register";
 
 function App() {
   return (
