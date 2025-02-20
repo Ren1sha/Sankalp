@@ -1,8 +1,11 @@
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 
+
+
 const Sankalp2025 = () => {
   const eventSectionRef = useRef(null);
+  
 
   const scrollToEvents = () => {
     eventSectionRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -14,7 +17,7 @@ const Sankalp2025 = () => {
       
       {/* Additional Info Section */}
       <div className="flex flex-col items-center justify-center px-6 mt-16">
-        <img src="/components/header.png" alt="Sankalp 2025" className="w-60 mb-6" />
+        <img src="/components/header.png" alt="Sankalp 2025" className="w-60 mb-4 -mt-5" />
         
         <h1 className="text-4xl font-bold text-orange-500 text-center">
           Code. <span className="text-red-500">Compete.</span> <span className="text-pink-500">Conquer.</span>
@@ -25,7 +28,7 @@ const Sankalp2025 = () => {
           Club Excel brings tech and fun to Sankalp 2025! Join us for an electrifying experience of coding battles, tech challenges, and interactive events.
         </p>
         
-        <div className="flex flex-wrap justify-center gap-8 mt-10 w-full max-w-4xl -mb-20">
+        <div className="flex flex-wrap justify-center gap-8 mt-10\\ w-full max-w-4xl -mb-20">
   <img src="/components/sankalplogo.png" alt="Logo 1" className="w-48" />  
   <img src="/components/club excel.png" alt="Logo 2" className="w-48" />
   <img src="/components/udbhav.png" alt="Logo 3" className="w-48" />
@@ -33,7 +36,7 @@ const Sankalp2025 = () => {
       </div>
 
       <header className="flex items-center justify-between p-4 absolute top-0 left-0 w-full">
-        <img src="/components/excellogo.png" alt="Sankalp 2025 Logo" className="w-19" />
+      <img src="/components/excellogo.png" alt="Logo 2" className="w-24" />
       </header>
       
       {/* Hero Section */}
@@ -66,7 +69,12 @@ const Sankalp2025 = () => {
       </section>
 
       <section ref={eventSectionRef} className="mt-20 px-11 text-center">
-      <section className="flex justify-center gap-8 mt-16 px-8">
+      
+
+      {/* Our Events Section */}
+        
+        <h2 className="text-6xl mt-20 font-extrabold text-right font-[Anton]">OUR EVENTS</h2>
+        <section className="flex justify-center gap-8 mt-16 px-8">
         <div className="bg-[#f88e43] text-white p-6 w-130">
           <h3 className="text-4xl font-black uppercase">
             CRUSADE <span className="bg-green-500 text-white px-2 py-1 rounded">CODE 3.0</span>
@@ -102,10 +110,7 @@ const Sankalp2025 = () => {
 
         </div>
       </section>
-
-      {/* Our Events Section */}
         
-        <h2 className="text-6xl mt-20 font-extrabold text-right font-[Anton]">OUR EVENTS</h2>
       </section>
 
       {/* Event Highlight Image */}
