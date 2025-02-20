@@ -19,7 +19,7 @@ const Sankalp2025 = () => {
           Club Excel brings tech and fun to Sankalp 2025! Join us for an electrifying experience of coding battles, tech challenges, and interactive events.
         </p>
         
-        <div className="flex flex-wrap justify-center gap-8 mt-10 w-full max-w-4xl">
+        <div className="flex flex-wrap justify-center gap-8 mt-10 w-full max-w-4xl -mb-20">
           <img src="/components/sankalplogo.png" alt="Logo 1" className="w-36" />
           <img src="/components/club excel.png" alt="Logo 2" className="w-36" />
           <img src="/components/udbhav.png" alt="Logo 3" className="w-36" />
@@ -27,9 +27,7 @@ const Sankalp2025 = () => {
       </div>
       <header className="flex items-center justify-between p-4 absolute top-0 left-0 w-full">
         <img src="/components/excellogo.png" alt="Sankalp 2025 Logo" className="w-19" />
-        <button className="text-orange-500 border border-orange-500 px-4 py-2 rounded">
-          INTERESTED ?
-        </button>
+        
       </header>
       
       {/* Hero Section */}
@@ -55,6 +53,37 @@ const Sankalp2025 = () => {
           <p className="mt-2 max-w-md text-gray-300">
             Club Excel brings tech and fun to Sankalp 2025! Join us for an electrifying experience of coding battles, tech challenges, and interactive events.
           </p>
+        </div>
+      </section>
+      <section className="flex justify-center gap-8 mt-16 px-8">
+        <div className="bg-[#f88e43] text-white p-6 w-130">
+        <h3 className="text-4xl font-black uppercase">CRUSADE <span className="bg-green-500 text-white px-2 py-1 rounded">CODE 3.0</span></h3>
+
+          <p className="mt-2">It's a coding competition. Get ready to unleash your coding skills at Code Crusade 3.0</p>
+          <img src="/components/students.png" alt="Event 1" className="mt-4 w-full" />
+          <p className="text-sm mt-2">28 FEB 2025 <span className="text-orange-600 font-bold">REGISTER</span></p>
+        </div>
+        <div className="bg-gray-200 text-black p-6  w-130">
+          <h3 className="text-3xl font-bold">CTR + WIN SHOWDOWN</h3>
+          <p className="mt-2">It's a coding competition. Get ready to unleash your coding skills at Code Crusade 3.0</p>
+          <img src="/components/students.png" alt="Event 2" className="mt-4 w-full" />
+          <p className="text-sm mt-2">28 FEB 2025 <span className="text-orange-600 font-bold">REGISTER</span></p>
+        </div>
+      </section>
+
+      {/* Our Events Section */}
+      <section className="mt-20 px-11 text-center">
+      <h2 className="text-6xl font-extrabold text-right font-[Anton]">OUR EVENTS</h2>
+
+        
+      </section>
+
+      {/* Event Highlight Image */}
+      <section className="relative flex justify-center mt-12">
+        <img src="/components/event.png" alt="Event Highlight" className="w-full max-w-6xl" />
+        <div className="absolute bottom-10 left-10 text-white">
+          <h2 className="text-5xl font-bold">CODE CRUSADE</h2>
+          <h3 className="text-4xl font-bold text-gray-500">CTR + WIN SHOWDOWN</h3>
         </div>
       </section>
     </div>
