@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Sankalp2025 = () => {
   return (
     <div className="min-h-screen w-screen bg-black text-white overflow-hidden relative">
@@ -61,7 +61,16 @@ const Sankalp2025 = () => {
 
           <p className="mt-2">It's a coding competition. Get ready to unleash your coding skills at Code Crusade 3.0</p>
           <img src="/components/students.png" alt="Event 1" className="mt-4 w-full" />
-          <p className="text-sm mt-2">28 FEB 2025 <span className="text-orange-600 font-bold">REGISTER</span></p>
+          <p className="text-sm mt-2">
+  28 FEB 2025 &nbsp;
+  <a href="/register" 
+   target="_blank" 
+   rel="noopener noreferrer" 
+   className="!text-orange-600 font-bold no-underline hover:!text-orange-500">
+  REGISTER
+</a>
+
+</p>
         </div>
         <div className="bg-gray-200 text-black p-6  w-130">
           <h3 className="text-3xl font-bold">CTR + WIN SHOWDOWN</h3>
