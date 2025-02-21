@@ -1,0 +1,14 @@
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header .logo {
+      font-size: 20px;
+    }
+  
+    form.customform input, form.customform select {
+      width: 100%;
+    }
+  
+    .s-12, .m-12, .l-12 {
+      width: 100%;
+    }
+  }
