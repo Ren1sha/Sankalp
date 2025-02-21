@@ -3,16 +3,19 @@ import React from "react";
 const Register = () => {
   return (
     <div className="min-h-screen w-screen overflow-hidden flex flex-col items-center bg-black text-white px-6 py-10">
-        
-<div className="absolute top-4 left-4">
-  <img src="/components/excellogo.png" alt="Logo" className="w-20 h-auto" />
-</div>
+      <div className="absolute top-4 left-4">
+        <img
+          src="/components/excellogo.png"
+          alt="Logo"
+          className="w-20 h-auto"
+        />
+      </div>
 
       {/* Header Image */}
       <div className="w-full flex justify-center">
-        <img 
-          src="/components/Group 124.png" 
-          alt="Code Crusade 3.0" 
+        <img
+          src="/components/Group 124.png"
+          alt="Code Crusade 3.0"
           className="max-w-full md:w-2/3 lg:w-1/2 h-auto mx-auto"
         />
       </div>
