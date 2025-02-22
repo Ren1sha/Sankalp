@@ -21,7 +21,7 @@ const Sankalp2025 = () => {
       <motion.img 
           src="/components/header.png" 
           alt="Sankalp 2025" 
-          className="w-48 mb-4 -mt-5 md:w-60"
+          className="w-48 mb-10 -mt-5 md:w-80"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -39,7 +39,7 @@ const Sankalp2025 = () => {
           </motion.h1>
 
           <motion.p 
-            className="text-gray-300 mt-4 max-w-2xl text-sm md:text-base leading-relaxed"
+            className="text-gray-300 mt-4 max-w-2xl text-sm md:text-base mb-10 leading-relaxed"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
