@@ -7,7 +7,7 @@ const Register = () => {
 
 
       {/* Header Image */}
-      <div className="w-full flex justify- pb-10">
+      <div className="w-full flex justify-center pb-10">
         <img 
           src="/components/Group 16.png" 
           alt="Code Crusade 3.0" 
@@ -18,11 +18,11 @@ const Register = () => {
       {/* Content Section */}
       <div className="container mx-auto flex flex-col md:flex-row gap-8 mt-3 w-full -pt-10 items-center justify-center text-center">
         {/* Left Section - Event Info */}
-        <div className="bg-[#693B14] text-white p-6 rounded-lg shadow-lg w-full md:w-1/3">
+        <div className="bg-[#693B14] text-white p-6 rounded-lg shadow-lg w-full md:w-1/3 ml-5">
         <h2 className="text-3xl font-bold text-orange-400 mt-4">
             Code Crusade
           </h2>
-          <p className="mt-2 p-15 text-gray-300">
+          <p className="-mt-5 p-15 text-gray-300">
             Get ready to unleash your coding skills at Code Crusade 3.0! Club
             Excel brings tech and fun to Sankalp 2025. Join us for an
             electrifying experience of coding battles, tech challenges, and
@@ -31,7 +31,7 @@ const Register = () => {
         </div>
 
         {/* Right Section - Registration Form */}
-        <div className="bg-white text-black p-6 rounded-lg shadow-lg w-full md:w-2/3">
+        <div className="bg-white text-black p-6 rounded-lg shadow-lg w-full md:w-2/3 mr-10">
           <form className="space-y-4">
             <div className="flex flex-col md:flex-row gap-4">
               <div className="flex-1">
