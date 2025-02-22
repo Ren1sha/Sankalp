@@ -135,7 +135,6 @@ const Sankalp2025 = () => {
         <section className="flex flex-col items-center gap-8 mt-10 px-4 md:flex-row md:justify-center md:px-8">
           <a
             href="/register"
-            target="_blank"
             rel="noopener noreferrer"
             className="w-full md:w-130 transition duration-300 hover:scale-105"
           >
@@ -156,25 +155,27 @@ const Sankalp2025 = () => {
           </a>
 
           <a
-            href="/register2"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full md:w-130 transition duration-300 hover:scale-105"
-          >
-            <div className="bg-gray-200 text-black p-4">
-              <h3 className="text-2xl font-bold md:text-3xl">
-                CTR + WIN SHOWDOWN
-              </h3>
-              <p className="mt-2 text-sm md:text-base">It's a coding competition. Get ready to unleash your coding skills at Code Crusade 3.0</p>
-              <img src="/components/newstud.jpg" alt="Event 2" className="mt-4 w-full" />
-              <p className="text-sm mt-2 font-extrabold text-black">
-                <span className="text-lg text-blue-600 tracking-widest">1 MAR 2025</span> &nbsp;
-                <span className="text-xl font-extrabold text-red-600 underline hover:text-red-500 transition duration-300">
-                  REGISTER
-                </span>
-              </p>
-            </div>
-          </a>
+  href="/register2"
+  rel="noopener noreferrer"
+  className="w-full md:w-130 transition duration-300 hover:scale-105"
+>
+  <div className="bg-gray-200 text-black p-4">
+    <h3 className="text-2xl font-bold md:text-3xl">
+      CTR + WIN SHOWDOWN
+    </h3>
+    <p className="mt-2 text-sm md:text-base">
+      It's a coding competition. Get ready to unleash your coding skills at Code Crusade 3.0
+    </p>
+    <img src="/components/newstud.jpg" alt="Event 2" className="mt-4 w-full" />
+    <p className="text-sm mt-2 font-extrabold text-black">
+      <span className="text-lg text-blue-600 tracking-widest">1 MAR 2025</span> &nbsp;
+      <span className="text-xl font-extrabold text-red-600 underline hover:text-red-500 transition duration-300">
+        REGISTER
+      </span>
+    </p>
+  </div>
+</a>
+
         </section>
       </section>
 
