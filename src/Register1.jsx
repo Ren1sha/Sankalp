@@ -1,5 +1,5 @@
 import React from "react";
-import group16 from './assets/Group 5.png'
+import group16 from './assets/Group 16.png'
 const Register1 = () => {
   return (
     <div className="min-h-screen w-screen overflow-hidden flex flex-col items-center bg-black text-white px-6 py-10">

@@ -147,7 +147,8 @@ const Sankalp2025 = () => {
           OUR EVENTS
         </h2>
 
-        <div className="flex flex-wrap justify-center gap-8 mt-16 md:flex-nowrap md:justify-center">
+        <div className="flex flex-wrap justify-center gap-8 mt-16 md:flex-nowrap md:justify-center"
+        >
           {/* Event 1 - Code Crusade 3.0 */}
           <div className="bg-[#f88e43] text-white p-4 rounded-lg shadow-lg max-w-[90%] sm:max-w-[80%] md:max-w-[45%] w-full">
             <h3 className="text-3xl font-black uppercase md:text-4xl">
@@ -180,7 +181,8 @@ const Sankalp2025 = () => {
           </div>
 
           {/* Event 2 - CTR + WIN SHOWDOWN */}
-          <div className="bg-gray-200 text-black p-4 rounded-lg shadow-lg max-w-[90%] sm:max-w-[80%] md:max-w-[45%] w-full">
+          <div className="bg-gray-200 text-black p-4 rounded-lg shadow-lg max-w-[90%] sm:max-w-[80%] md:max-w-[45%] w-full"
+          >
             <h3 className="text-2xl font-bold md:text-3xl">
               CTR + WIN SHOWDOWN
             </h3>
