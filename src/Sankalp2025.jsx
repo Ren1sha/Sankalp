@@ -6,13 +6,21 @@ import udbhav from "./assets/udv wo glow 1.png";
 import bigevent from "./assets/sankalp111.png";
 import student from "./assets/image.png";
 import eventnight from "./assets/sankalp222.png"
+import { useNavigate } from "react-router-dom";
+
 const Sankalp2025 = () => {
+  const navigate = useNavigate();
   const eventSectionRef = useRef(null);
 
   const scrollToEvents = () => {
     eventSectionRef.current?.scrollIntoView({ behavior: "smooth" });
   };
-
+  const handlenextpage1 = () =>{
+    navigate("/register1")
+  }
+  const handlenextpage2 = () =>{
+    navigate("/register2")
+  }
   return (
     <div className="min-h-screen w-screen bg-black text-white overflow-hidden relative">
       <div className="flex flex-col items-center justify-center px-4 mt-auto mb-auto md:px-6 h-screen ml-auto mr-auto relative bottom-16">
@@ -161,10 +169,12 @@ const Sankalp2025 = () => {
                 28 FEB 2025
               </span>{" "}
               &nbsp;
-              <span className="text-xl font-extrabold text-orange-700 underline hover:text-orange-400 transition duration-300"
-           
-              >
-                REGISTER
+              <span className="bg-white" >
+                <button className="text-xl font-extrabold text-orange-400 underline hover:text-orange-400 transition duration-300 "
+                onClick={handlenextpage1}
+                >
+                REGISTER 
+                </button>
               </span>
             </p>
           </div>
@@ -187,8 +197,11 @@ const Sankalp2025 = () => {
                 1 MAR 2025
               </span>{" "}
               &nbsp;
-              <span className="text-xl font-extrabold text-red-600 underline hover:text-red-500 transition duration-300">
+              <span>
+                <button className="text-xl font-extrabold text-orange-600 underline hover:text-red-500 transition duration-300"
+                onClick={handlenextpage2}>
                 REGISTER
+                </button>
               </span>
             </p>
           </div>

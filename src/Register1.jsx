@@ -1,24 +1,20 @@
 import React from "react";
-
+import group16 from './assets/Group 5.png'
 const Register1 = () => {
   return (
     <div className="min-h-screen w-screen overflow-hidden flex flex-col items-center bg-black text-white px-6 py-10">
         
-<div className="absolute top-4 left-4">
-  <img src="/components/excellogo.png" alt="Logo" className="w-20 h-auto" />
-</div>
-
       {/* Header Image */}
-      <div className="w-full flex justify-center">
+      <div className="w-full flex justify-center ml-auto mr-auto">
         <img 
-          src="/components/Group 16.png" 
+          src={group16}
           alt="Code Crusade 3.0" 
           className="max-w-full md:w-2/3 lg:w-1/2 h-auto mx-auto"
         />
       </div>
 
       {/* Content Section */}
-      <div className="container mx-auto flex flex-col md:flex-row gap-8 mt-10 w-full">
+      <div className="container mx-auto flex flex-col md:flex-row gap-8 mt-10 w-full p-20">
         {/* Left Section - Event Info */}
         <div className="bg-[#693B14] text-white p-6 rounded-lg shadow-lg w-full md:w-1/3">
           <h2 className="text-xl font-bold text-orange-400">
