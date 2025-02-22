@@ -11,8 +11,8 @@ const Register = () => {
       <div className="w-full flex justify-center">
         <img 
           src="/components/Group 124.png" 
-          alt="Code Crusade 3.0" 
-          className="max-w-full md:w-2/3 lg:w-1/2 h-auto mx-auto -mt-10"
+          alt="ctr + win showdown" 
+          className="max-w-full md:w-2/3 lg:w-1/2 h-auto mx-auto"
         />
       </div>
 
