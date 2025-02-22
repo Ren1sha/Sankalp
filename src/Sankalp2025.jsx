@@ -159,7 +159,7 @@ const Sankalp2025 = () => {
   rel="noopener noreferrer"
   className="w-full md:w-130 transition duration-300 hover:scale-105"
 >
-  <div className="bg-white-200 text-black p-4">
+  <div className="bg-gray-200 text-black p-4">
     <h3 className="text-2xl font-bold text-gray-500 md:text-4xl p-2">
       CTR + WIN SHOWDOWN
     </h3>
