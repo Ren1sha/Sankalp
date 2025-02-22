@@ -17,13 +17,13 @@ const Register = () => {
       </div>
 
       {/* Content Section */}
-      <div className="container mx-auto flex flex-col md:flex-row gap-8 mt-3 w-full -pt-10">
+      <div className="container mx-auto flex flex-col md:flex-row gap-8 mt-3 w-full -pt-10 items-center justify-center text-center">
         {/* Left Section - Event Info */}
         <div className="bg-[#693B14] text-white p-6 rounded-lg shadow-lg w-full md:w-1/3">
-          <h2 className="text-xl font-bold text-orange-400">
+          <h2 className="text-3xl font-bold text-orange-400 mt-5 ">
             CTR + WIN SHOWDOWN
           </h2>
-          <p className="mt-2 text-gray-300">
+          <p className="mt-2 p-15 text-gray-300">
             Get ready to unleash your coding skills at Code Crusade 3.0! Club
             Excel brings tech and fun to Sankalp 2025. Join us for an
             electrifying experience of coding battles, tech challenges, and
