@@ -8,22 +8,22 @@ const Register = () => {
 
 
       {/* Header Image */}
-      <div className="w-full flex justify-center pb-10">
+      <div className="w-full flex justify-center">
         <img 
           src="/components/Group 124.png" 
           alt="ctr + win showdown" 
-          className="max-w-full md:w-2/3 lg:w-1/2 h-auto mx-auto"
+          className="max-w-full md:w-2/3 lg:w-1/2 h-auto mx-auto -mt-5"
         />
       </div>
 
       {/* Content Section */}
-      <div className="container mx-auto flex flex-col md:flex-row gap-8 -mt-9 w-full -pt-10 items-center justify-center text-center">
+      <div className="container mx-auto flex flex-col md:flex-row gap-8 mt-3 w-full -pt-10">
         {/* Left Section - Event Info */}
-        <div className="bg-[#693B14] text-white p-6 rounded-lg shadow-lg w-full md:w-1/3 ml-5">
-          <h2 className="text-3xl font-bold text-orange-400 mt-5 ">
+        <div className="bg-[#693B14] text-white p-6 rounded-lg shadow-lg w-full md:w-1/3">
+          <h2 className="text-xl font-bold text-orange-400">
             CTR + WIN SHOWDOWN
           </h2>
-          <p className="-mt-5 p-15 text-gray-300">
+          <p className="mt-2 text-gray-300">
             Get ready to unleash your coding skills at Code Crusade 3.0! Club
             Excel brings tech and fun to Sankalp 2025. Join us for an
             electrifying experience of coding battles, tech challenges, and
@@ -32,7 +32,7 @@ const Register = () => {
         </div>
 
         {/* Right Section - Registration Form */}
-        <div className="bg-white text-black p-6 rounded-lg shadow-lg w-full md:w-2/3 mr-10">
+        <div className="bg-white text-black p-6 rounded-lg shadow-lg w-full md:w-2/3">
           <form className="space-y-4">
             <div className="flex flex-col md:flex-row gap-4">
               <div className="flex-1">
