@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Sankalp2025 = () => {
   const eventSectionRef = useRef(null);
@@ -10,57 +11,101 @@ const Sankalp2025 = () => {
 
   return (
     <div className="min-h-screen w-screen bg-black text-white overflow-hidden relative">
-      <header className="flex items-center justify-between p-4 absolute top-0 left-0 w-full">
-        <div className="flex-grow">
-          <img src="/components/excellogo.png" alt="Logo 2" className="w-24" />
-        </div>
-      </header>
+      
 
       <div className="flex flex-col items-center justify-center px-4 mt-16 md:px-6">
-        <img src="/components/header.png" alt="Sankalp 2025" className="w-48 mb-4 -mt-5 md:w-60" />
+      <motion.img 
+          src="/components/header.png" 
+          alt="Sankalp 2025" 
+          className="w-48 mb-4 -mt-5 md:w-60"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        />
 
         <div className="text-center">
-          <h1 className="text-3xl font-bold text-orange-500 md:text-4xl leading-tight">
+        <motion.h1 
+            className="text-3xl font-bold text-orange-500 md:text-4xl leading-tight"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
             Code. <span className="text-red-500">Compete.</span> <span className="text-pink-500">Conquer.</span>
             <span className="ml-2">🚀</span>
-          </h1>
+          </motion.h1>
 
-          <p className="text-gray-300 mt-4 max-w-2xl text-sm md:text-base leading-relaxed">
+          <motion.p 
+            className="text-gray-300 mt-4 max-w-2xl text-sm md:text-base leading-relaxed"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
             Club Excel brings tech and fun to Sankalp 2025! Join us for an electrifying experience of coding battles, tech challenges, and interactive events.
-          </p>
+          </motion.p>
         </div>
 
         <div className="flex flex-wrap justify-center mt-10 w-full max-w-4xl -mb-20 md:gap-8 px-4 md:px-0">
-          <div className="w-1/3 px-2 md:w-auto">
-            <img src="/components/sankalplogo.png" alt="Logo 1" className="w-full md:w-48" />
-          </div>
-          <div className="w-1/3 px-2 md:w-auto">
-            <img src="/components/club excel.png" alt="Logo 2" className="w-full md:w-48" />
-          </div>
-          <div className="w-1/3 px-2 md:w-auto">
-            <img src="/components/udbhav.png" alt="Logo 3" className="w-full md:w-48" />
-          </div>
-        </div>
+  <motion.div 
+    className="w-1/3 px-2 md:w-auto"
+    initial={{ opacity: 0, scale: 0.8 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.6 }}
+  >
+    <img src="/components/sankalplogo.png" alt="Logo 1" className="w-full md:w-48" />
+  </motion.div>
+
+  <motion.div 
+    className="w-1/3 px-2 md:w-auto"
+    initial={{ opacity: 0, scale: 0.8 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.6, delay: 0.2 }}
+  >
+    <img src="/components/clublogo.gif" alt="Logo 2" className="w-full md:w-45" />
+  </motion.div>
+
+  <motion.div 
+    className="w-1/3 px-2 md:w-auto"
+    initial={{ opacity: 0, scale: 0.8 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.6, delay: 0.4 }}
+  >
+    <img src="/components/udbhav.png" alt="Logo 3" className="w-full md:w-48" />
+  </motion.div>
+</div>
+
       </div>
 
       <section className="flex flex-col justify-center items-start min-h-screen px-4 md:px-8">
-        <h1 className="text-5xl font-extrabold md:text-6xl">
+      <motion.h1 
+          className="text-5xl font-extrabold md:text-6xl mt-12"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
           <span style={{ color: "#f88e43" }}>SANKALP</span> 2025
-        </h1>
+        </motion.h1>
 
-        <h2 className="text-6xl font-extrabold mt-4 md:text-8xl">
+        <motion.h2 
+          className="text-6xl font-extrabold mt-4 md:text-8xl"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
           BIGGEST <span style={{ color: "#F88E43" }}>EVENT</span>
-        </h2>
+        </motion.h2>
 
-        <button
+
+        <motion.button
           className="mt-6 border border-orange-500 text-orange-500 px-4 py-2 text-base font-semibold md:px-6 md:py-2 md:text-lg"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
           onClick={scrollToEvents}
         >
           INTERESTED ?
-        </button>
+        </motion.button>
       </section>
 
-      <section className="relative flex justify-center">
+      <section className="relative flex justify-center -mt-45">
         <img src="/components/bgimage.png" alt="Event Highlight" className="w-full max-w-6xl" />
         <div className="absolute bottom-6 left-6 text-white md:bottom-10 md:left-10">
           <h2 className="text-3xl font-bold md:text-5xl">
@@ -73,8 +118,15 @@ const Sankalp2025 = () => {
       </section>
 
       <section ref={eventSectionRef} className="mt-12 px-6 text-center md:mt-20 md:px-11">
-        <h2 className="text-4xl mt-12 font-extrabold text-right font-[Anton] md:mt-20 md:text-6xl">OUR EVENTS</h2>
-        <section className="flex flex-col items-center gap-8 mt-16 px-4 md:flex-row md:justify-center md:px-8">
+      <motion.h2 
+  className="text-4xl mt-12 font-extrabold text-right font-[Anton] md:mt-20 md:text-6xl"
+  initial={{ opacity: 0, x: 50 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.6 }}
+>
+  OUR EVENTS
+</motion.h2>
+        <section className="flex flex-col items-center gap-8 mt-10 px-4 md:flex-row md:justify-center md:px-8">
           <a
             href="/register"
             target="_blank"
