@@ -10,7 +10,11 @@ const Sankalp2025 = () => {
   };
 
   return (
-    <div className="min-h-screen w-screen bg-black text-white overflow-hidden relative">
+    <div className="min-h-screen w-screen bg-black text-white overflow-x-hidden relative">
+
+
+
+
       
 
       <div className="flex flex-col items-center justify-center px-4 mt-16 md:px-6">
@@ -105,7 +109,9 @@ const Sankalp2025 = () => {
         </motion.button>
       </section>
 
-      <section className="relative flex justify-center -mt-45">
+      <section className="relative flex justify-center mt-12 w-full overflow-hidden">
+
+
         <img src="/components/bgimage.png" alt="Event Highlight" className="w-full max-w-6xl" />
         <div className="absolute bottom-6 left-6 text-white md:bottom-10 md:left-10">
           <h2 className="text-3xl font-bold md:text-5xl">
@@ -160,7 +166,7 @@ const Sankalp2025 = () => {
                 CTR + WIN SHOWDOWN
               </h3>
               <p className="mt-2 text-sm md:text-base">It's a coding competition. Get ready to unleash your coding skills at Code Crusade 3.0</p>
-              <img src="/components/students.png" alt="Event 2" className="mt-4 w-full" />
+              <img src="/components/newstud.jpg" alt="Event 2" className="mt-4 w-full" />
               <p className="text-sm mt-2 font-extrabold text-black">
                 <span className="text-lg text-blue-600 tracking-widest">1 MAR 2025</span> &nbsp;
                 <span className="text-xl font-extrabold text-red-600 underline hover:text-red-500 transition duration-300">
