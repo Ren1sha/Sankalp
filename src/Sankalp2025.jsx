@@ -64,7 +64,7 @@ const Sankalp2025 = () => {
     whileInView={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.6, delay: 0.2 }}
   >
-    <img src="/components/clublogo.gif" alt="Logo 2" className="w-full md:w-45" />
+    <img src="/components/clublogo.gif" alt="Logo 2" className="w-full md:w-40 mt-5" />
   </motion.div>
 
   <motion.div 
