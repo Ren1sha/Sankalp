@@ -27,6 +27,7 @@ const Register = () => {
     }
   }
 
+  
   return (
     <div className="min-h-screen w-screen overflow-hidden flex flex-col items-center bg-black text-white px-6 py-10">
       {/* Header Image */}
