@@ -146,7 +146,7 @@ const Sankalp2025 = () => {
               <p className="mt-2 text-sm md:text-base">It's a coding competition. Get ready to unleash your coding skills at Code Crusade 3.0</p>
               <img src="/components/students.png" alt="Event 1" className="mt-4 w-full" />
               <p className="text-sm mt-2 font-extrabold text-white">
-                <span className="text-lg text-grey-400 tracking-widest">28 FEB 2025</span> &nbsp;
+                <span className="text-lg text-gray-700 shadow-md bg-gradient-to-r from-gray-500 to-gray-800 px-2 py-1 rounded-md">28 MAR 2025</span> &nbsp;
                 <span className="text-xl font-extrabold text-orange-700 underline hover:text-orange-400 transition duration-300">
                   REGISTER
                 </span>
