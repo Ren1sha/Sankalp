@@ -9,6 +9,7 @@ const Register = () => {
     regNumber: "",
     hostelLocal: "",
     groupName: "",
+    hackId:"",
   });
   const [group, setGroup] = useState("");
 
@@ -27,7 +28,7 @@ const Register = () => {
     }
   }
 
-  
+
   return (
     <div className="min-h-screen w-screen overflow-hidden flex flex-col items-center bg-black text-white px-6 py-10">
       {/* Header Image */}
@@ -125,6 +126,20 @@ const Register = () => {
                 />
               </div>
 
+              <div>
+                <label htmlFor="regNumber" className="block font-semibold">
+                  HackerRank Id
+                </label>
+                <input
+                  id="hackId"
+                  type="text"
+                  placeholder="Enter HackerRank Id"
+                  className="w-full p-3 border rounded-lg bg-gray-100"
+                  onChange={(e) =>
+                    setData({ ...data, hackId: e.target.value })
+                  }
+                />
+              </div>
               <div>
                 <label htmlFor="hostelLocal" className="block font-semibold">
                   Hostelite/Localite
