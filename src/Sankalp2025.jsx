@@ -96,40 +96,40 @@ const Sankalp2025 = () => {
         </div>
       </div>
 
-      <section className="flex flex-col  justify-center items-start min-h-screen px-4 md:px-8">     
-      <motion.h1
-            className="text-5xl font-extrabold md:text-6xl mt-12 relative left-[70%] flex "
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <span style={{ color: "#f88e43" }} className="ml-auto">
-              <motion.div
-                className="w-1/3 px-2 md:w-auto"
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6 }}
-              >
-                <img
-                  src="/components/udbhav.png"
-                  alt="Logo 1"
-                  className=" md:w-48"
-                  style={{
-                    width: "10rem",
-                  }}
-                />
-              </motion.div>
-            </span>
-            <p
-                className="text-justify w-60 text-white font-sans mt-auto mb-auto "
+      <section className="flex flex-col  justify-center items-start min-h-screen px-4 md:px-8">
+        <motion.h1
+          className="text-5xl font-extrabold md:text-6xl mt-12 relative left-[70%] flex "
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <span style={{ color: "#f88e43" }} className="ml-auto">
+            <motion.div
+              className="w-1/3 px-2 md:w-auto"
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6 }}
+            >
+              <img
+                src="/components/udbhav.png"
+                alt="Logo 1"
+                className=" md:w-48"
                 style={{
-                  fontSize: "10px",
+                  width: "10rem",
                 }}
-              >
-                Get ready for an electrifying blend of knowledge, culture, and
-                entertainment – SANKALP 2025 is here to ignite your passion!..
-              </p>
-          </motion.h1>
+              />
+            </motion.div>
+          </span>
+          <p
+            className="text-justify w-60 text-white font-sans mt-auto mb-auto "
+            style={{
+              fontSize: "10px",
+            }}
+          >
+            Get ready for an electrifying blend of knowledge, culture, and
+            entertainment – SANKALP 2025 is here to ignite your passion!..
+          </p>
+        </motion.h1>
         <motion.h1
           className="text-5xl font-extrabold md:text-6xl mt-12"
           initial={{ opacity: 0, y: 20 }}
