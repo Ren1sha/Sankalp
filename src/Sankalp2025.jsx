@@ -14,14 +14,15 @@ const Sankalp2025 = () => {
   };
 
   return (
-    <div className="min-h-screen w-screen bg-black text-white overflow-x-hidden relative">
-      <div className="flex flex-col items-center justify-center px-4 mt-auto mb-auto md:px-6 h-screen"
-       ref={eventSectionRef1}
+    <div className="min-h-screen w-screen bg-black text-white overflow-x-hidden relative ">
+      <div
+        className="flex flex-col items-center justify-center px-4 mt-auto mb-auto md:px-6 h-screen "
+        ref={eventSectionRef1}
       >
         <motion.img
           src="/components/header.png"
           alt="Sankalp 2025"
-          className="w-96 mb-10 -mt-5 md:w-80  ml-auto mr-auto"
+          className="w-96 mb-10 -mt-5 md:w-80  ml-auto mr-auto max-sm:mt-28"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -51,7 +52,7 @@ const Sankalp2025 = () => {
           </motion.p>
         </div>
 
-        <div className="flex flex-wrap justify-center mt-10 w-full max-w-4xl -mb-20 md:gap-8 px-4 md:px-0 max-sm:flex-col max-sm:items-center">
+        <div className="flex flex-wrap justify-center mt-10 w-full max-w-4xl -mb-20 md:gap-8 px-4 md:px-0 max-sm:flex-col max-sm:items-center max-sm:mt-2">
           <motion.div
             className="w-1/3 px-2 md:w-auto"
             initial={{ opacity: 0, scale: 0.8 }}
@@ -102,38 +103,55 @@ const Sankalp2025 = () => {
         </div>
       </div>
 
+      {/* Bigest event section  */}
       <section className="min-h-screen px-4 md:px-8">
-        <motion.h1
-          className="text-5xl font-extrabold md:text-6xl mt-12"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <span style={{ color: "#f88e43" }}>SANKALP</span> 2025
-        </motion.h1>
+        <div className="flex flex-row justify-end mr-10 max-sm:mt-60">
+          <div>
+            <img
+              src="/components/udbhav.png"
+              alt="Event Highlight"
+              className="w-36 max-w-6xl"
+            />
+          </div>
+          <div className="w-28 text-[10px] mt-6  ">
+            Get ready for an electrifying blend of knowledge, culture, and
+            entertainment – SANKALP 2025 is here to ignite your passion!..
+          </div>
+        </div>
+        <div className="flex flex-row  gap-40 items-center max-sm:flex-col max-sm:gap-1">
+          <motion.h1
+            className="text-5xl font-extrabold md:text-6xl mt-12"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <span style={{ color: "#f88e43" }}>SANKALP</span> 2025
+          </motion.h1>
+          <motion.button
+            className="border my-4 border-orange-500 text-orange-500 px-6 py-1 text-base font-semibold md:px-6 md:py-2 md:text-lg mt-10 "
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={scrollToEvents}
+          >
+            INTERESTED ?
+          </motion.button>
+        </div>
+
         <motion.h2
-          className="text-6xl font-extrabold md:text-8xl"
+          className="text-6xl font-bold md:text-8xl"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <div className="w-full">
-            <span className="lg:text-[200px]">
-              BIGGEST <span style={{ color: "#F88E43" }}>EVENT</span>{" "}
-            </span>
+          <div className="w-full flex flex-row gap-10 max-sm:flex-col">
+            <span className="lg:text-[200px]">BIGGEST</span>
+            <span style={{ color: "#F88E43" }} className="lg:text-[200px]">
+              EVENT
+            </span>{" "}
           </div>
         </motion.h2>
-        <motion.button
-          className="border my-4 border-orange-500 text-orange-500 px-4 py-2 text-base font-semibold md:px-6 md:py-2 md:text-lg"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          onClick={scrollToEvents}
-        >
-          INTERESTED ?
-        </motion.button>
-      </section>
 
-      <section className="relative flex justify-center mt-12 w-full overflow-hidden">
+        <div className="relative flex justify-center mt-12 w-full overflow-hidden">
         <img
           src="/components/bgimage.png"
           alt="Event Highlight"
@@ -141,7 +159,7 @@ const Sankalp2025 = () => {
         />
         <div className="absolute bottom-6 left-6 text-white md:bottom-10 md:left-10">
           <motion.div
-            className="text-left font-extrabold leading-none"
+            className="text-left font-bold leading-none"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -150,7 +168,7 @@ const Sankalp2025 = () => {
               CLUB
             </span>
             <span
-              className="block text-white text-6xl md:text-7xl font-black"
+              className="block text-white text-9xl md:text-7xl font-black font-bold max-sm:text-6xl"
               style={{ letterSpacing: "-1px" }}
             >
               EXCEL
@@ -163,14 +181,17 @@ const Sankalp2025 = () => {
             interactive events.
           </p>
         </div>
+        </div>
       </section>
 
+
+      {/* our event section */}
       <section
         ref={eventSectionRef}
         className="mt-12 px-6 text-center md:mt-20 md:px-11"
       >
         <motion.h2
-          className="text-9xl mt-12 font-extrabold text-right font-[Anton] md:mt-20 md:text-6xl"
+          className="text-9xl mt-12 font-extrabold text-right font-[Anton] md:mt-20 md:text-6xl max-sm:text-5xl"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
