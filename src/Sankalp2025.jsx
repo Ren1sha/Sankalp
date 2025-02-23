@@ -114,9 +114,21 @@ const Sankalp2025 = () => {
 
         <img src="/components/bgimage.png" alt="Event Highlight" className="w-full max-w-6xl" />
         <div className="absolute bottom-6 left-6 text-white md:bottom-10 md:left-10">
-          <h2 className="text-3xl font-bold md:text-5xl">
-            CLUB <span className="text-white">EXCEL</span>
-          </h2>
+          <motion.div 
+  className="text-left font-extrabold leading-none"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+>
+  <span className="block text-white text-3xl md:text-4xl tracking-wide">
+    CLUB
+  </span>
+  <span className="block text-white text-6xl md:text-7xl font-black" style={{ letterSpacing: "-1px" }}>
+    EXCEL
+  </span>
+</motion.div>
+
+
           <p className="mt-2 max-w-md text-sm text-gray-300 md:text-base">
             Club Excel brings tech and fun to Sankalp 2025! Join us for an electrifying experience of coding battles, tech challenges, and interactive events.
           </p>
@@ -146,7 +158,7 @@ const Sankalp2025 = () => {
               <p className="mt-2 text-sm md:text-base">It's a coding competition. Get ready to unleash your coding skills at Code Crusade 3.0</p>
               <img src="/components/students.png" alt="Event 1" className="mt-4 w-full" />
               <p className="text-sm mt-2 font-extrabold text-white">
-                <span className="text-lg text-grey-400 tracking-widest">28 FEB 2025</span> &nbsp;
+                <span className="text-lg text-yellow-400 tracking-widest">28 FEB 2025</span> &nbsp;
                 <span className="text-xl font-extrabold text-orange-700 underline hover:text-orange-400 transition duration-300">
                   REGISTER
                 </span>
