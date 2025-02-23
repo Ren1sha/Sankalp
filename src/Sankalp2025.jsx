@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-
+import video1 from "/components/excel.mp4";
 const Sankalp2025 = () => {
   const eventSectionRef = useRef(null);
   const eventSectionRef1 = useRef(null);
@@ -78,7 +78,7 @@ const Sankalp2025 = () => {
             <img
               src="/components/clublogo.gif"
               alt="Logo 2"
-              className="w-full md:w-40 mt-5"
+              className="w-full sm:w-20 md:w-40 mt-5"
               style={{
                 width: "14rem",
               }}
@@ -152,38 +152,37 @@ const Sankalp2025 = () => {
         </motion.h2>
 
         <div className="relative flex justify-center mt-12 w-full overflow-hidden">
-        <img
-          src="/components/bgimage.png"
-          alt="Event Highlight"
-          className="w-full max-w-6xl"
-        />
-        <div className="absolute bottom-6 left-6 text-white md:bottom-10 md:left-10">
-          <motion.div
-            className="text-left font-bold leading-none"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <span className="block text-white text-3xl md:text-4xl tracking-wide">
-              CLUB
-            </span>
-            <span
-              className="block text-white text-9xl md:text-7xl font-black font-bold max-sm:text-6xl"
-              style={{ letterSpacing: "-1px" }}
+          <img
+            src="/components/bgimage.png"
+            alt="Event Highlight"
+            className="w-full max-w-6xl"
+          />
+          <div className="absolute bottom-6 left-6 text-white md:bottom-10 md:left-10">
+            <motion.div
+              className="text-left font-bold leading-none"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
             >
-              EXCEL
-            </span>
-          </motion.div>
+              <span className="block text-white text-3xl md:text-4xl tracking-wide">
+                CLUB
+              </span>
+              <span
+                className="block text-white text-9xl md:text-7xl font-black font-bold max-sm:text-6xl"
+                style={{ letterSpacing: "-1px" }}
+              >
+                EXCEL
+              </span>
+            </motion.div>
 
-          <p className="mt-2 max-w-md text-sm text-gray-300 md:text-base">
-            Club Excel brings tech and fun to Sankalp 2025! Join us for an
-            electrifying experience of coding battles, tech challenges, and
-            interactive events.
-          </p>
-        </div>
+            <p className="mt-2 max-w-md text-sm text-gray-300 md:text-base">
+              Club Excel brings tech and fun to Sankalp 2025! Join us for an
+              electrifying experience of coding battles, tech challenges, and
+              interactive events.
+            </p>
+          </div>
         </div>
       </section>
-
 
       {/* our event section */}
       <section
@@ -266,16 +265,16 @@ const Sankalp2025 = () => {
       </section>
 
       <section className="flex flex-col justify-center items-center p-2 mt-10">
-        <div>
+        <div >
           <img
             src="/components/image.png"
             alt="Event Highlight"
             className="h-[349px] w-[1550px] rounded aspect-3/2 px-8 py-4"
           />
         </div>
-        <div className="flex flex-row  justify-between items-center gap-[50rem] p-4 max-sm:flex-col max-sm:gap-0 max-md:gap-0 max-md:flex-col max-lg:flex-col max-lg:gap-0">
+        <div className="flex flex-row  justify-between items-center gap-[50rem] p-4 max-sm:flex-col max-sm:gap-0 max-md:gap-0 max-md:flex-col max-lg:flex-col max-lg:gap-0 mt-4 max-xl:gap-[16rem]">
           <motion.button
-            className="border my-4 border-orange-500 text-orange-500 px-4 py-2 text-base font-semibold md:px-6 md:py-2 md:text-lg"
+            className="border my-4 border-orange-500 text-orange-500 px-4 py-2 text-base font-semibold md:px-6 md:py-2 md:text-lg "
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={scrollToEvents1}

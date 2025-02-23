@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { useEffect } from "react";
 
 const Register = () => {
   const [data, setData] = useState({
@@ -9,25 +10,26 @@ const Register = () => {
     regNumber: "",
     hostelLocal: "",
     groupName: "",
-    hackId:"",
+    hackId: "",
   });
-  const [group, setGroup] = useState("");
+  const [group, setGroup] = useState([]);
 
-  if (data.rollNumber) {
-    const sub = data.rollNumber.substring(0, 4);
-    console.log(sub);
+  useEffect(() => {
+    if (data.rollNumber) {
+      const sub = data.rollNumber.substring(0, 4);
+      console.log(sub);
 
-    if (sub === "2024") {
-      setGroup("Group1");
-    } else if (sub === "2023") {
-      setGroup("Group2");
-    } else if (sub === "2022") {
-      setGroup("Group3");
-    } else {
-      setGroup("Unknown Group");
+      if (sub === "2024") {
+        setGroup(["Group 1"]);
+      } else if (sub === "2023") {
+        setGroup(["Group 1", "Group 2"]);
+      } else if (sub === "2022") {
+        setGroup(["Group 1", "Group 2", "Group 3"]);
+      } else {
+        setGroup(["Incorrect roll no"]);
+      }
     }
-  }
-
+  }, [data.rollNumber]);
 
   return (
     <div className="min-h-screen w-screen overflow-hidden flex flex-col items-center bg-black text-white px-6 py-10">
@@ -91,7 +93,7 @@ const Register = () => {
                 <input
                   id="email"
                   type="email"
-                  placeholder="youremail@gmail.com"
+                  placeholder="youremail@nist.edu"
                   className="w-full p-3 border rounded-lg bg-gray-100"
                   onChange={(e) => setData({ ...data, email: e.target.value })}
                 />
@@ -135,9 +137,7 @@ const Register = () => {
                   type="text"
                   placeholder="Enter HackerRank Id"
                   className="w-full p-3 border rounded-lg bg-gray-100"
-                  onChange={(e) =>
-                    setData({ ...data, hackId: e.target.value })
-                  }
+                  onChange={(e) => setData({ ...data, hackId: e.target.value })}
                 />
               </div>
               <div>
@@ -167,9 +167,9 @@ const Register = () => {
                   onChange={(e) => setData({ ...data, groupName: { group } })}
                 >
                   <option value="">Select</option>
-                  <option value="">Group 1</option>
-                  <option value="">Group 2</option>
-                  <option value="">Group 3</option>
+                  {group.map((option) => {
+                    return <option>{option}</option>;
+                  })}
                 </select>
               </div>
             </div>
