@@ -90,6 +90,17 @@ const Register = () => {
                   <option value="localite">Localite</option>
                 </select>
               </div>
+            <div className="lg:col-span-3">
+                <label htmlFor="batch" className="block font-semibold">Batch</label>
+                <input
+                  id="batch"
+                  type="text"
+                  placeholder="Enter Batch Year"
+                  className="w-full p-3 border rounded-lg bg-gray-100"
+                />
+              </div>
+            </div>
+
 
             <button className="w-full bg-orange-500 text-white py-2 rounded-lg font-bold hover:bg-orange-600 transition">
               Submit
