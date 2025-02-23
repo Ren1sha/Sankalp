@@ -4,14 +4,20 @@ import { motion } from "framer-motion";
 
 const Sankalp2025 = () => {
   const eventSectionRef = useRef(null);
-
+  const eventSectionRef1 = useRef(null);
   const scrollToEvents = () => {
     eventSectionRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const scrollToEvents1 = () => {
+    eventSectionRef1.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="min-h-screen w-screen bg-black text-white overflow-x-hidden relative">
-      <div className="flex flex-col items-center justify-center px-4 mt-auto mb-auto md:px-6 h-screen">
+      <div className="flex flex-col items-center justify-center px-4 mt-auto mb-auto md:px-6 h-screen"
+       ref={eventSectionRef1}
+      >
         <motion.img
           src="/components/header.png"
           alt="Sankalp 2025"
@@ -164,7 +170,7 @@ const Sankalp2025 = () => {
         className="mt-12 px-6 text-center md:mt-20 md:px-11"
       >
         <motion.h2
-          className="text-4xl mt-12 font-extrabold text-right font-[Anton] md:mt-20 md:text-6xl"
+          className="text-9xl mt-12 font-extrabold text-right font-[Anton] md:mt-20 md:text-6xl"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
@@ -238,17 +244,29 @@ const Sankalp2025 = () => {
         </section>
       </section>
 
-      <section className="relative flex justify-center mt-12">
-        <img
-          src="/components/event.png"
-          alt="Event Highlight"
-          className="w-auto rounded aspect-3/2 px-8 py-4"
-        />
-        <div className="absolute bottom-6 left-6 text-white md:bottom-10 md:left-10">
-          <h2 className="text-3xl font-bold md:text-5xl">CODE CRUSADE</h2>
-          <h3 className="text-2xl font-bold text-gray-500 md:text-4xl">
-            CTRL + WIN SHOWDOWN
-          </h3>
+      <section className="flex flex-col justify-center items-center p-2 mt-10">
+        <div>
+          <img
+            src="/components/image.png"
+            alt="Event Highlight"
+            className="h-[349px] w-[1550px] rounded aspect-3/2 px-8 py-4"
+          />
+        </div>
+        <div className="flex flex-row  justify-between items-center gap-[50rem] p-4 max-sm:flex-col max-sm:gap-0 max-md:gap-0 max-md:flex-col max-lg:flex-col max-lg:gap-0">
+          <motion.button
+            className="border my-4 border-orange-500 text-orange-500 px-4 py-2 text-base font-semibold md:px-6 md:py-2 md:text-lg"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={scrollToEvents1}
+          >
+            INTERESTED ?
+          </motion.button>
+          <div className=" text-white md:bottom-10 md:left-10 flex flex-col items-end ml-auto mr-8">
+            <h2 className="text-3xl font-bold md:text-5xl">CODE CRUSADE</h2>
+            <h3 className="text-2xl font-bold text-gray-500 md:text-4xl">
+              CTRL + WIN SHOWDOWN
+            </h3>
+          </div>
         </div>
       </section>
     </div>
