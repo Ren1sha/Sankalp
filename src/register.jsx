@@ -10,18 +10,21 @@ const Register = () => {
     hostelLocal: "",
     groupName: "",
   });
-  const roll = data.rolln;
-  const sub = roll.substring(0,4);
-  let gn;
-  console.log(sub);
-  if (sub=="2024") {
-    gn = "Group1"
-  }
-  else if (sub == "2023"){
-    gn = "Group2"
-  }
-  else if(sub == "2022") {
-    gn="Group3"
+  const [group, setGroup] = useState("");
+
+  if (data.rollNumber) {
+    const sub = data.rollNumber.substring(0, 4);
+    console.log(sub);
+
+    if (sub === "2024") {
+      setGroup("Group1");
+    } else if (sub === "2023") {
+      setGroup("Group2");
+    } else if (sub === "2022") {
+      setGroup("Group3");
+    } else {
+      setGroup("Unknown Group");
+    }
   }
 
   return (
@@ -32,7 +35,6 @@ const Register = () => {
           src="/components/Group 16.png"
           alt="Code Crusade 3.0"
           className="max-w-full md:w-2/3 lg:w-1/2 h-auto mx-auto"
-          
         />
       </div>
 
@@ -101,7 +103,9 @@ const Register = () => {
                   type="text"
                   placeholder="Enter Roll Number"
                   className="w-full p-3 border rounded-lg bg-gray-100"
-                  onChange={(e) => setData({ ...data, rollNumber: e.target.value })}
+                  onChange={(e) =>
+                    setData({ ...data, rollNumber: e.target.value })
+                  }
                 />
               </div>
 
@@ -114,7 +118,9 @@ const Register = () => {
                   type="text"
                   placeholder="Enter Registration Number"
                   className="w-full p-3 border rounded-lg bg-gray-100"
-                  onChange={(e) => setData({ ...data, regNumber: e.target.value })}
+                  onChange={(e) =>
+                    setData({ ...data, regNumber: e.target.value })
+                  }
                 />
               </div>
 
@@ -125,7 +131,9 @@ const Register = () => {
                 <select
                   id="hostelLocal"
                   className="w-full p-3 border rounded-lg bg-gray-100"
-                  onChange={(e) => setData({ ...data, hostelLocal: e.target.value })}
+                  onChange={(e) =>
+                    setData({ ...data, hostelLocal: e.target.value })
+                  }
                 >
                   <option value="">Select</option>
                   <option value="hostelite">Hostelite</option>
@@ -140,7 +148,7 @@ const Register = () => {
                 <select
                   id="groupName"
                   className="w-full p-3 border rounded-lg bg-gray-100"
-                  onChange={(e) => setData({ ...data, groupName: {gn} })}
+                  onChange={(e) => setData({ ...data, groupName: { group } })}
                 >
                   <option value="">Select</option>
                   <option value="">Group 1</option>
