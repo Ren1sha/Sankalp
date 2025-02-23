@@ -1,6 +1,14 @@
 import React from "react";
-
+import { useState } from "react";
 const Register = () => {
+  const [data, setData] = useState({
+    name: "",
+    phone: "",
+    rollNo: "",
+    regName: "",
+    hostelLocal: "",
+    groupName: "",
+  });
   return (
     <div className="min-h-screen w-screen overflow-hidden flex flex-col items-center bg-black text-white px-6 py-10">
       {/* Header Image */}
@@ -34,26 +42,18 @@ const Register = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
               <div>
                 <label htmlFor="firstName" className="block font-semibold">
-                  First Name
+                  Name
                 </label>
                 <input
-                  id="firstName"
+                  id="Name"
                   type="text"
-                  placeholder="Enter First Name"
+                  value={data.name}
+                  placeholder="Enter Name"
                   className="w-full p-3 border rounded-lg bg-gray-100"
+                  onChange={(e) => setData({ ...data, name: e.target.value })}
                 />
               </div>
-              <div>
-                <label htmlFor="lastName" className="block font-semibold">
-                  Last Name
-                </label>
-                <input
-                  id="lastName"
-                  type="text"
-                  placeholder="Enter Last Name"
-                  className="w-full p-3 border rounded-lg bg-gray-100"
-                />
-              </div>
+
               <div>
                 <label htmlFor="phone" className="block font-semibold">
                   Phone Number
@@ -63,6 +63,7 @@ const Register = () => {
                   type="tel"
                   placeholder="Enter Phone Number"
                   className="w-full p-3 border rounded-lg bg-gray-100"
+                  onChange={(e) => setData({ ...data, phone: e.target.value })}
                 />
               </div>
               <div>
@@ -74,6 +75,7 @@ const Register = () => {
                   type="email"
                   placeholder="youremail@nist.edu"
                   className="w-full p-3 border rounded-lg bg-gray-100"
+                  onChange={(e) => setData({ ...data, email: e.target.value })}
                 />
               </div>
               <div>
@@ -85,6 +87,9 @@ const Register = () => {
                   type="text"
                   placeholder="Enter Roll Number"
                   className="w-full p-3 border rounded-lg bg-gray-100"
+                  onChange={(e) =>
+                    setData({ ...data, rollNumber: e.target.value })
+                  }
                 />
               </div>
               <div>
@@ -96,6 +101,9 @@ const Register = () => {
                   type="text"
                   placeholder="Enter Registration Number"
                   className="w-full p-3 border rounded-lg bg-gray-100"
+                  onChange={(e) =>
+                    setData({ ...data, regNumber: e.target.value })
+                  }
                 />
               </div>
               <div>
@@ -105,40 +113,17 @@ const Register = () => {
                 <select
                   id="hostelLocal"
                   className="w-full p-3 border rounded-lg bg-gray-100"
+                  onChange={(e) =>
+                  setData({ ...data, hostelLocal: e.target.value })
+                  }
                 >
                   <option value="">Select</option>
                   <option value="hostelite">Hostelite</option>
                   <option value="localite">Localite</option>
                 </select>
               </div>
-
-              {/* Group */}
-              <div>
-                <label htmlFor="groupName" className="block font-semibold">
-                  Group1/Group2
-                </label>
-                <select
-                  id="groupName"
-                  className="w-full p-3 border rounded-lg bg-gray-100"
-                >
-                  <option value="">Select</option>
-                  <option value="hostelite">Group 1</option>
-                  <option value="localite">Group 2</option>
-                </select>
-              </div>
-              <div className="lg:col-span-3">
-                <label htmlFor="batch" className="block font-semibold">
-                  Batch
-                </label>
-                <input
-                  id="batch"
-                  type="text"
-                  placeholder="Enter Batch Year"
-                  className="w-full p-3 border rounded-lg bg-gray-100"
-                />
-              </div>
             </div>
-            <button className="w-full bg-orange-500 text-white py-3 rounded-lg font-bold hover:bg-orange-600 transition-all duration-300">
+            <button className="w-full bg-orange-500 text-white py-3 rounded-lg font-bold hover:bg-orange-600 transition-all duration-300 mt-4">
               Submit
             </button>
           </form>

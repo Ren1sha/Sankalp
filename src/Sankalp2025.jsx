@@ -45,7 +45,7 @@ const Sankalp2025 = () => {
           </motion.p>
         </div>
 
-        <div className="flex flex-wrap justify-center mt-10 w-full max-w-4xl -mb-20 md:gap-8 px-4 md:px-0">
+        <div className="flex flex-wrap justify-center mt-10 w-full max-w-4xl -mb-20 md:gap-8 px-4 md:px-0 max-sm:flex-col max-sm:items-center">
           <motion.div
             className="w-1/3 px-2 md:w-auto"
             initial={{ opacity: 0, scale: 0.8 }}
@@ -199,7 +199,7 @@ const Sankalp2025 = () => {
                   28 FEB 2025
                 </span>{" "}
                 &nbsp;
-                <span className="text-xl font-extrabold text-orange-700 underline hover:text-orange-400 transition duration-300">
+                <span className="text-xl font-extrabold text-orange-700 underline hover:text-orange-900 transition duration-300">
                   REGISTER
                 </span>
               </p>
