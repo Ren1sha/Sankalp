@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import video1 from "/components/excel.mp4";
 const Sankalp2025 = () => {
   const eventSectionRef = useRef(null);
   const eventSectionRef1 = useRef(null);
