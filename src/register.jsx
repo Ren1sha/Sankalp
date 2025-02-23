@@ -53,6 +53,16 @@ const Register = () => {
             </div>
 
             <div>
+                <label htmlFor="phone" className="block font-semibold">Phone Number</label>
+                <input
+                  id="phone"
+                  type="tel"
+                  placeholder="Enter Phone Number"
+                  className="w-full p-3 border rounded-lg bg-gray-100"
+                />
+              </div>
+            
+            <div>
               <label className="block font-semibold">Student Email</label>
               <input
                 type="email"
