@@ -1,35 +1,55 @@
-import React from "react";
-import { useState } from "react";
-import { useEffect } from "react";
-
+import React, { useState, useEffect } from "react";
 const Register = () => {
   const [data, setData] = useState({
     name: "",
     phone: "",
+    email: "",
     rollNumber: "",
-    regNumber: "",
     hostelLocal: "",
     groupName: "",
     hackId: "",
   });
   const [group, setGroup] = useState([]);
-
+  const [emailError, setEmailError] = useState("");
+  const [phoneError, setPhoneError] = useState("");
   useEffect(() => {
     if (data.rollNumber) {
       const sub = data.rollNumber.substring(0, 4);
       console.log(sub);
 
       if (sub === "2024") {
-        setGroup(["Group 1"]);
-      } else if (sub === "2023") {
-        setGroup(["Group 1", "Group 2"]);
-      } else if (sub === "2022") {
         setGroup(["Group 1", "Group 2", "Group 3"]);
+      } else if (sub === "2023") {
+        setGroup(["Group 2", "Group 3"]);
+      } else if (sub === "2022") {
+        setGroup(["Group 3"]);
+      } else if (sub === "2021") {
+        setGroup(["Group 3"]);
       } else {
         setGroup(["Incorrect roll no"]);
       }
+    } else {
+      setGroup([]);
     }
   }, [data.rollNumber]);
+
+  const validateEmail = (email) => {
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    if (!emailPattern.test(email)) {
+      setEmailError("Invalid email format");
+    } else {
+      setEmailError("");
+    }
+  };
+  const validatePhone = (phone) => {
+    const phonePattern = /^[6-9]\d{9}$/;
+    if (!phonePattern.test(phone)) {
+      setPhoneError("Enter a valid 10-digit phone number");
+    } else {
+      setPhoneError("");
+    }
+  };
 
   return (
     <div className="min-h-screen w-screen overflow-hidden flex flex-col items-center bg-black text-white px-6 py-10">
@@ -68,6 +88,7 @@ const Register = () => {
                 <input
                   id="name"
                   type="text"
+                  value={data.name}
                   placeholder="Enter Name"
                   className="w-full p-3 border rounded-lg bg-gray-100"
                   onChange={(e) => setData({ ...data, name: e.target.value })}
@@ -81,10 +102,17 @@ const Register = () => {
                 <input
                   id="phone"
                   type="tel"
+                  value={data.phone}
                   placeholder="Enter Phone Number"
                   className="w-full p-3 border rounded-lg bg-gray-100"
-                  onChange={(e) => setData({ ...data, phone: e.target.value })}
+                  onChange={(e) => {
+                    setData({ ...data, phone: e.target.value });
+                    validatePhone(e.target.value);
+                  }}
                 />
+                {phoneError && (
+                  <p className="text-red-500 text-sm">{phoneError}</p>
+                )}
               </div>
               <div>
                 <label htmlFor="email" className="block font-semibold">
@@ -93,10 +121,17 @@ const Register = () => {
                 <input
                   id="email"
                   type="email"
-                  placeholder="youremail@nist.edu"
+                  value={data.email}
+                  placeholder="enter your email"
                   className="w-full p-3 border rounded-lg bg-gray-100"
-                  onChange={(e) => setData({ ...data, email: e.target.value })}
+                  onChange={(e) => {
+                    setData({ ...data, email: e.target.value });
+                    validateEmail(e.target.value);
+                  }}
                 />
+                {emailError && (
+                  <p className="text-red-500 text-sm">{emailError}</p>
+                )}
               </div>
               <div>
                 <label htmlFor="rollNumber" className="block font-semibold">
@@ -105,26 +140,12 @@ const Register = () => {
                 <input
                   id="rollNumber"
                   type="text"
+                  value={data.rollNumber}
                   placeholder="Enter Roll Number"
                   className="w-full p-3 border rounded-lg bg-gray-100"
-                  onChange={(e) =>
-                    setData({ ...data, rollNumber: e.target.value })
-                  }
-                />
-              </div>
-
-              <div>
-                <label htmlFor="regNumber" className="block font-semibold">
-                  Registration Number
-                </label>
-                <input
-                  id="regNumber"
-                  type="text"
-                  placeholder="Enter Registration Number"
-                  className="w-full p-3 border rounded-lg bg-gray-100"
-                  onChange={(e) =>
-                    setData({ ...data, regNumber: e.target.value })
-                  }
+                  onChange={(e) => {
+                    setData({ ...data, rollNumber: e.target.value });
+                  }}
                 />
               </div>
 
@@ -164,12 +185,14 @@ const Register = () => {
                 <select
                   id="groupName"
                   className="w-full p-3 border rounded-lg bg-gray-100"
-                  onChange={(e) => setData({ ...data, groupName: { group } })}
+                  onChange={(e) =>
+                    setData({ ...data, groupName: e.target.value })
+                  }
                 >
                   <option value="">Select</option>
-                  {group.map((option) => {
-                    return <option>{option}</option>;
-                  })}
+                  {group.map((option, index) => (
+                    <option key={index}>{option}</option>
+                  ))}
                 </select>
               </div>
             </div>
