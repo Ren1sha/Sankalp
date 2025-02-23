@@ -163,9 +163,21 @@ const Sankalp2025 = () => {
           className="w-full max-w-6xl"
         />
         <div className="absolute bottom-6 left-6 text-white md:bottom-10 md:left-10">
-          <h2 className="text-3xl font-bold md:text-5xl">
-            CLUB <span className="text-white">EXCEL</span>
-          </h2>
+          <motion.div 
+  className="text-left font-extrabold leading-none"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+>
+  <span className="block text-white text-3xl md:text-4xl tracking-wide">
+    CLUB
+  </span>
+  <span className="block text-white text-6xl md:text-7xl font-black" style={{ letterSpacing: "-1px" }}>
+    EXCEL
+  </span>
+</motion.div>
+
+
           <p className="mt-2 max-w-md text-sm text-gray-300 md:text-base">
             Club Excel brings tech and fun to Sankalp 2025! Join us for an
             electrifying experience of coding battles, tech challenges, and
@@ -210,10 +222,7 @@ const Sankalp2025 = () => {
                 className="mt-4 w-full"
               />
               <p className="text-sm mt-2 font-extrabold text-white">
-                <span className="text-lg text-yellow-400 tracking-widest">
-                  28 FEB 2025
-                </span>{" "}
-                &nbsp;
+                <span className="text-lg text-black-400 tracking-widest">28 FEB 2025</span> &nbsp;
                 <span className="text-xl font-extrabold text-orange-700 underline hover:text-orange-400 transition duration-300">
                   REGISTER
                 </span>
