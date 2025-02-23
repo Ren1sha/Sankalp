@@ -70,15 +70,6 @@ const Register = () => {
                 className="w-full p-2 border rounded-lg bg-gray-100"
               />
             </div>
-            <div>
-                <label htmlFor="phone" className="block font-semibold">Phone Number</label>
-                <input
-                  id="phone"
-                  type="tel"
-                  placeholder="Enter Phone Number"
-                  className="w-full p-2 border rounded-lg bg-gray-100"
-                />
-              </div>
 
             <button className="w-full bg-orange-500 text-white py-2 rounded-lg font-bold hover:bg-orange-600 transition">
               Submit
