@@ -52,7 +52,7 @@ const Sankalp2025 = () => {
           </motion.p>
         </div>
 
-        <div className="flex flex-wrap justify-center mt-10 w-full max-w-4xl -mb-20 md:gap-8 px-4 md:px-0 max-sm:flex-col max-sm:items-center max-sm:mt-2">
+        <div className="flex flex-wrap justify-center mt-10 w-full max-w-4xl -mb-20 md:gap-8 px-4 md:px-0 max-sm:flex-col max-sm:items-center max-sm:mt-2 max-sm:">
           <motion.div
             className="w-1/3 px-2 md:w-auto"
             initial={{ opacity: 0, scale: 0.8 }}
@@ -282,9 +282,9 @@ const Sankalp2025 = () => {
           >
             INTERESTED ?
           </motion.button>
-          <div className=" text-white md:bottom-10 md:left-10 flex flex-col items-end ml-auto mr-8">
+          <div className=" text-white md:bottom-10 md:left-10 flex flex-col items-end ml-auto mr-8 ">
             <h2 className="text-3xl font-bold md:text-5xl">CODE CRUSADE</h2>
-            <h3 className="text-2xl font-bold text-gray-500 md:text-4xl">
+            <h3 className="text-2xl font-bold text-gray-500 md:text-4xl max-sm:ml-[11rem]">
               CTRL + WIN SHOWDOWN
             </h3>
           </div>
