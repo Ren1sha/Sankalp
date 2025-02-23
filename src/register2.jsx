@@ -6,7 +6,7 @@ const Register = () => {
       {/* Header Image */}
       <div className="w-full flex justify-center">
         <img
-          src="/components/Group 16.png"
+          src="/components/Group 124.png"
           alt="Code Crusade 3.0"
           className="max-w-full md:w-2/3 lg:w-1/2 h-auto mx-auto"
         />
@@ -17,13 +17,14 @@ const Register = () => {
         {/* Left Section - Event Info */}
         <div className="bg-[#693B14] text-white p-6 rounded-lg shadow-lg w-full md:w-1/3">
           <h2 className="text-xl font-bold text-orange-400">
-            Code Crusade is a coding competition.
+            ctrl + win showdown
           </h2>
           <p className="mt-2 text-gray-300">
-            Get ready to unleash your coding skills at Code Crusade 3.0! Club
-            Excel brings tech and fun to Sankalp 2025. Join us for an
-            electrifying experience of coding battles, tech challenges, and
-            interactive events.
+            1st game:- two pair game (eg. jenga, chess, ludo or other custom
+            game of your choice)
+            <br></br>
+            2nd game:- quiz round (with buzzer) <br></br>
+            3rd :- surprise round
           </p>
         </div>
 
@@ -32,7 +33,9 @@ const Register = () => {
           <form className="space-y-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
               <div>
-                <label htmlFor="firstName" className="block font-semibold">First Name</label>
+                <label htmlFor="firstName" className="block font-semibold">
+                  First Name
+                </label>
                 <input
                   id="firstName"
                   type="text"
@@ -41,7 +44,9 @@ const Register = () => {
                 />
               </div>
               <div>
-                <label htmlFor="lastName" className="block font-semibold">Last Name</label>
+                <label htmlFor="lastName" className="block font-semibold">
+                  Last Name
+                </label>
                 <input
                   id="lastName"
                   type="text"
@@ -50,7 +55,9 @@ const Register = () => {
                 />
               </div>
               <div>
-                <label htmlFor="phone" className="block font-semibold">Phone Number</label>
+                <label htmlFor="phone" className="block font-semibold">
+                  Phone Number
+                </label>
                 <input
                   id="phone"
                   type="tel"
@@ -59,7 +66,9 @@ const Register = () => {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block font-semibold">Student Email</label>
+                <label htmlFor="email" className="block font-semibold">
+                  Student Email
+                </label>
                 <input
                   id="email"
                   type="email"
@@ -68,7 +77,9 @@ const Register = () => {
                 />
               </div>
               <div>
-                <label htmlFor="rollNumber" className="block font-semibold">Roll Number</label>
+                <label htmlFor="rollNumber" className="block font-semibold">
+                  Roll Number
+                </label>
                 <input
                   id="rollNumber"
                   type="text"
@@ -77,7 +88,20 @@ const Register = () => {
                 />
               </div>
               <div>
-                <label htmlFor="hostelLocal" className="block font-semibold">Hostelite/Localite</label>
+                <label htmlFor="regNumber" className="block font-semibold">
+                  Registration Number
+                </label>
+                <input
+                  id="regNumber"
+                  type="text"
+                  placeholder="Enter Registration Number"
+                  className="w-full p-3 border rounded-lg bg-gray-100"
+                />
+              </div>
+              <div>
+                <label htmlFor="hostelLocal" className="block font-semibold">
+                  Hostelite/Localite
+                </label>
                 <select
                   id="hostelLocal"
                   className="w-full p-3 border rounded-lg bg-gray-100"
@@ -87,8 +111,25 @@ const Register = () => {
                   <option value="localite">Localite</option>
                 </select>
               </div>
+
+              {/* Group */}
+              <div>
+                <label htmlFor="groupName" className="block font-semibold">
+                  Group1/Group2
+                </label>
+                <select
+                  id="groupName"
+                  className="w-full p-3 border rounded-lg bg-gray-100"
+                >
+                  <option value="">Select</option>
+                  <option value="hostelite">Group 1</option>
+                  <option value="localite">Group 2</option>
+                </select>
+              </div>
               <div className="lg:col-span-3">
-                <label htmlFor="batch" className="block font-semibold">Batch</label>
+                <label htmlFor="batch" className="block font-semibold">
+                  Batch
+                </label>
                 <input
                   id="batch"
                   type="text"

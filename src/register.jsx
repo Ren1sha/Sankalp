@@ -32,7 +32,9 @@ const Register = () => {
           <form className="space-y-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
               <div>
-                <label htmlFor="firstName" className="block font-semibold">First Name</label>
+                <label htmlFor="firstName" className="block font-semibold">
+                  First Name
+                </label>
                 <input
                   id="firstName"
                   type="text"
@@ -41,7 +43,9 @@ const Register = () => {
                 />
               </div>
               <div>
-                <label htmlFor="lastName" className="block font-semibold">Last Name</label>
+                <label htmlFor="lastName" className="block font-semibold">
+                  Last Name
+                </label>
                 <input
                   id="lastName"
                   type="text"
@@ -50,7 +54,9 @@ const Register = () => {
                 />
               </div>
               <div>
-                <label htmlFor="phone" className="block font-semibold">Phone Number</label>
+                <label htmlFor="phone" className="block font-semibold">
+                  Phone Number
+                </label>
                 <input
                   id="phone"
                   type="tel"
@@ -59,7 +65,9 @@ const Register = () => {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block font-semibold">Student Email</label>
+                <label htmlFor="email" className="block font-semibold">
+                  Student Email
+                </label>
                 <input
                   id="email"
                   type="email"
@@ -68,7 +76,9 @@ const Register = () => {
                 />
               </div>
               <div>
-                <label htmlFor="rollNumber" className="block font-semibold">Roll Number</label>
+                <label htmlFor="rollNumber" className="block font-semibold">
+                  Roll Number
+                </label>
                 <input
                   id="rollNumber"
                   type="text"
@@ -76,8 +86,23 @@ const Register = () => {
                   className="w-full p-3 border rounded-lg bg-gray-100"
                 />
               </div>
+
               <div>
-                <label htmlFor="hostelLocal" className="block font-semibold">Hostelite/Localite</label>
+                <label htmlFor="regNumber" className="block font-semibold">
+                  Registration Number
+                </label>
+                <input
+                  id="regNumber"
+                  type="text"
+                  placeholder="Enter Registration Number"
+                  className="w-full p-3 border rounded-lg bg-gray-100"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="hostelLocal" className="block font-semibold">
+                  Hostelite/Localite
+                </label>
                 <select
                   id="hostelLocal"
                   className="w-full p-3 border rounded-lg bg-gray-100"
@@ -88,7 +113,9 @@ const Register = () => {
                 </select>
               </div>
               <div className="lg:col-span-3">
-                <label htmlFor="batch" className="block font-semibold">Batch</label>
+                <label htmlFor="batch" className="block font-semibold">
+                  Batch
+                </label>
                 <input
                   id="batch"
                   type="text"

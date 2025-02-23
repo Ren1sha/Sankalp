@@ -96,40 +96,7 @@ const Sankalp2025 = () => {
         </div>
       </div>
 
-      <section className="flex flex-col  justify-center items-start min-h-screen px-4 md:px-8">
-        <motion.h1
-          className="text-5xl font-extrabold md:text-6xl mt-12 relative left-[70%] flex "
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <span style={{ color: "#f88e43" }} className="ml-auto">
-            <motion.div
-              className="w-1/3 px-2 md:w-auto"
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6 }}
-            >
-              <img
-                src="/components/udbhav.png"
-                alt="Logo 1"
-                className=" md:w-48"
-                style={{
-                  width: "10rem",
-                }}
-              />
-            </motion.div>
-          </span>
-          <p
-            className="text-justify w-60 text-white font-sans mt-auto mb-auto "
-            style={{
-              fontSize: "10px",
-            }}
-          >
-            Get ready for an electrifying blend of knowledge, culture, and
-            entertainment – SANKALP 2025 is here to ignite your passion!..
-          </p>
-        </motion.h1>
+      <section className="min-h-screen px-4 md:px-8">
         <motion.h1
           className="text-5xl font-extrabold md:text-6xl mt-12"
           initial={{ opacity: 0, y: 20 }}
@@ -139,15 +106,19 @@ const Sankalp2025 = () => {
           <span style={{ color: "#f88e43" }}>SANKALP</span> 2025
         </motion.h1>
         <motion.h2
-          className="text-6xl font-extrabold md:text-8xl "
+          className="text-6xl font-extrabold md:text-8xl"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          BIGGEST <span style={{ color: "#F88E43" }}>EVENT</span>
+          <div className="w-full">
+            <span className="lg:text-[200px]">
+              BIGGEST <span style={{ color: "#F88E43" }}>EVENT</span>{" "}
+            </span>
+          </div>
         </motion.h2>
         <motion.button
-          className="border border-orange-500 text-orange-500 px-4 py-2 text-base font-semibold md:px-6 md:py-2 md:text-lg"
+          className="border my-4 border-orange-500 text-orange-500 px-4 py-2 text-base font-semibold md:px-6 md:py-2 md:text-lg"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={scrollToEvents}
@@ -163,20 +134,22 @@ const Sankalp2025 = () => {
           className="w-full max-w-6xl"
         />
         <div className="absolute bottom-6 left-6 text-white md:bottom-10 md:left-10">
-          <motion.div 
-  className="text-left font-extrabold leading-none"
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6 }}
->
-  <span className="block text-white text-3xl md:text-4xl tracking-wide">
-    CLUB
-  </span>
-  <span className="block text-white text-6xl md:text-7xl font-black" style={{ letterSpacing: "-1px" }}>
-    EXCEL
-  </span>
-</motion.div>
-
+          <motion.div
+            className="text-left font-extrabold leading-none"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="block text-white text-3xl md:text-4xl tracking-wide">
+              CLUB
+            </span>
+            <span
+              className="block text-white text-6xl md:text-7xl font-black"
+              style={{ letterSpacing: "-1px" }}
+            >
+              EXCEL
+            </span>
+          </motion.div>
 
           <p className="mt-2 max-w-md text-sm text-gray-300 md:text-base">
             Club Excel brings tech and fun to Sankalp 2025! Join us for an
@@ -222,7 +195,10 @@ const Sankalp2025 = () => {
                 className="mt-4 w-full"
               />
               <p className="text-sm mt-2 font-extrabold text-white">
-                <span className="text-lg text-black-400 tracking-widest">28 FEB 2025</span> &nbsp;
+                <span className="text-lg text-black-400 tracking-widest">
+                  28 FEB 2025
+                </span>{" "}
+                &nbsp;
                 <span className="text-xl font-extrabold text-orange-700 underline hover:text-orange-400 transition duration-300">
                   REGISTER
                 </span>
@@ -266,12 +242,12 @@ const Sankalp2025 = () => {
         <img
           src="/components/event.png"
           alt="Event Highlight"
-          className="w-full max-w-6xl"
+          className="w-auto rounded aspect-3/2 px-8 py-4"
         />
         <div className="absolute bottom-6 left-6 text-white md:bottom-10 md:left-10">
           <h2 className="text-3xl font-bold md:text-5xl">CODE CRUSADE</h2>
           <h3 className="text-2xl font-bold text-gray-500 md:text-4xl">
-            CTR + WIN SHOWDOWN
+            CTRL + WIN SHOWDOWN
           </h3>
         </div>
       </section>
