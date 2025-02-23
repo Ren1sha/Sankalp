@@ -69,6 +69,17 @@ const Register = () => {
                 className="w-full p-2 border rounded-lg bg-gray-100"
               />
             </div>
+            <div>
+                <label htmlFor="hostelLocal" className="block font-semibold">Hostelite/Localite</label>
+                <select
+                  id="hostelLocal"
+                  className="w-full p-3 border rounded-lg bg-gray-100"
+                >
+                  <option value="">Select</option>
+                  <option value="hostelite">Hostelite</option>
+                  <option value="localite">Localite</option>
+                </select>
+              </div>
 
             <button className="w-full bg-orange-500 text-white py-2 rounded-lg font-bold hover:bg-orange-600 transition">
               Submit
