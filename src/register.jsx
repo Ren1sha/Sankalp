@@ -3,14 +3,11 @@ import React from "react";
 const Register = () => {
   return (
     <div className="min-h-screen w-screen overflow-hidden flex flex-col items-center bg-black text-white px-6 py-10">
-        
-
-
       {/* Header Image */}
       <div className="w-full flex justify-center">
-        <img 
-          src="/components/Group 16.png" 
-          alt="Code Crusade 3.0" 
+        <img
+          src="/components/Group 16.png"
+          alt="Code Crusade 3.0"
           className="max-w-full md:w-2/3 lg:w-1/2 h-auto mx-auto"
         />
       </div>
@@ -33,26 +30,26 @@ const Register = () => {
         {/* Right Section - Registration Form */}
         <div className="bg-white text-black p-6 rounded-lg shadow-lg w-full md:w-2/3">
           <form className="space-y-4">
-            <div className="flex flex-col md:flex-row gap-4">
-              <div className="flex-1">
-                <label className="block font-semibold">First Name</label>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
+              <div>
+                <label htmlFor="firstName" className="block font-semibold">First Name</label>
                 <input
+                  id="firstName"
                   type="text"
                   placeholder="Enter First Name"
-                  className="w-full p-2 border rounded-lg bg-gray-100"
+                  className="w-full p-3 border rounded-lg bg-gray-100"
                 />
               </div>
-              <div className="flex-1">
-                <label className="block font-semibold">Last Name</label>
+              <div>
+                <label htmlFor="lastName" className="block font-semibold">Last Name</label>
                 <input
+                  id="lastName"
                   type="text"
                   placeholder="Enter Last Name"
-                  className="w-full p-2 border rounded-lg bg-gray-100"
+                  className="w-full p-3 border rounded-lg bg-gray-100"
                 />
               </div>
-            </div>
-
-            <div>
+              <div>
                 <label htmlFor="phone" className="block font-semibold">Phone Number</label>
                 <input
                   id="phone"
@@ -61,25 +58,25 @@ const Register = () => {
                   className="w-full p-3 border rounded-lg bg-gray-100"
                 />
               </div>
-            
-            <div>
-              <label className="block font-semibold">Student Email</label>
-              <input
-                type="email"
-                placeholder="youremail@nist.edu"
-                className="w-full p-2 border rounded-lg bg-gray-100"
-              />
-            </div>
-
-            <div>
-              <label className="block font-semibold">Roll Number</label>
-              <input
-                type="text"
-                placeholder="Enter Roll Number"
-                className="w-full p-2 border rounded-lg bg-gray-100"
-              />
-            </div>
-            <div>
+              <div>
+                <label htmlFor="email" className="block font-semibold">Student Email</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="youremail@nist.edu"
+                  className="w-full p-3 border rounded-lg bg-gray-100"
+                />
+              </div>
+              <div>
+                <label htmlFor="rollNumber" className="block font-semibold">Roll Number</label>
+                <input
+                  id="rollNumber"
+                  type="text"
+                  placeholder="Enter Roll Number"
+                  className="w-full p-3 border rounded-lg bg-gray-100"
+                />
+              </div>
+              <div>
                 <label htmlFor="hostelLocal" className="block font-semibold">Hostelite/Localite</label>
                 <select
                   id="hostelLocal"
@@ -90,7 +87,7 @@ const Register = () => {
                   <option value="localite">Localite</option>
                 </select>
               </div>
-            <div className="lg:col-span-3">
+              <div className="lg:col-span-3">
                 <label htmlFor="batch" className="block font-semibold">Batch</label>
                 <input
                   id="batch"
@@ -100,9 +97,7 @@ const Register = () => {
                 />
               </div>
             </div>
-
-
-            <button className="w-full bg-orange-500 text-white py-2 rounded-lg font-bold hover:bg-orange-600 transition">
+            <button className="w-full bg-orange-500 text-white py-3 rounded-lg font-bold hover:bg-orange-600 transition-all duration-300">
               Submit
             </button>
           </form>
