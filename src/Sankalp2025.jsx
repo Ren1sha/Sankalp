@@ -114,21 +114,9 @@ const Sankalp2025 = () => {
 
         <img src="/components/bgimage.png" alt="Event Highlight" className="w-full max-w-6xl" />
         <div className="absolute bottom-6 left-6 text-white md:bottom-10 md:left-10">
-          <motion.div 
-  className="text-left font-extrabold leading-none"
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6 }}
->
-  <span className="block text-white text-3xl md:text-4xl tracking-wide">
-    CLUB
-  </span>
-  <span className="block text-white text-6xl md:text-7xl font-black" style={{ letterSpacing: "-1px" }}>
-    EXCEL
-  </span>
-</motion.div>
-
-
+          <h2 className="text-3xl font-bold md:text-5xl">
+            CLUB <span className="text-white">EXCEL</span>
+          </h2>
           <p className="mt-2 max-w-md text-sm text-gray-300 md:text-base">
             Club Excel brings tech and fun to Sankalp 2025! Join us for an electrifying experience of coding battles, tech challenges, and interactive events.
           </p>
