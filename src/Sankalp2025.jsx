@@ -240,7 +240,7 @@ const Sankalp2025 = () => {
           >
             <div className="bg-gray-200 text-black p-4">
               <h3 className="text-2xl font-bold text-gray-500 md:text-4xl p-2">
-                CTR + WIN SHOWDOWN
+                CTRL + WIN SHOWDOWN
               </h3>
               <p className="mt-2 text-sm md:text-base">
                 It's a coding competition. Get ready to unleash your coding

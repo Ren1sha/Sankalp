@@ -73,7 +73,7 @@ const Register = () => {
                 <input
                   id="email"
                   type="email"
-                  placeholder="youremail@nist.edu"
+                  placeholder="youremail@gmail.com"
                   className="w-full p-3 border rounded-lg bg-gray-100"
                   onChange={(e) => setData({ ...data, email: e.target.value })}
                 />
