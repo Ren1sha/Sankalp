@@ -114,7 +114,7 @@ const Register = () => {
                   id="hostelLocal"
                   className="w-full p-3 border rounded-lg bg-gray-100"
                   onChange={(e) =>
-                  setData({ ...data, hostelLocal: e.target.value })
+                    setData({ ...data, hostelLocal: e.target.value })
                   }
                 >
                   <option value="">Select</option>
