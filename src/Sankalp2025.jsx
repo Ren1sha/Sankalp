@@ -279,7 +279,7 @@ const Sankalp2025 = () => {
                   className="border border-[#CBA690] text-[#CBA690] text-[10px] bg-none font-semibold px-6 md:px-6 md:py-2 md:text-[80px]"
                   onClick={scrollToEvents1}
                 >
-                  <p className="text-[10px] ">INTERESTED ?</p>
+                  <p className="text-[10px] ">INTERESTED?</p>
                 </button>
               </div>
             </div>
