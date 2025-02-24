@@ -99,7 +99,7 @@ const Sankalp2025 = () => {
         </div>
       </div>
 
-      <section className="px-4 md:px-8">
+      <section className="px-4 md:px-8 ">
         <div
           className="flex flex-row justify-end mt-10
          mr-10  md:mt-60"
@@ -116,7 +116,7 @@ const Sankalp2025 = () => {
             entertainment – SANKALP 2025 is here to ignite your passion!..
           </div>
         </div>
-        <div className="flex flex-row  gap-40  max-sm:flex-col max-sm:gap-1">
+        <div className="flex flex-row  gap-40  max-sm:flex-col max-sm:gap-1 ">
           <p className="text-[20px] font-extrabold md:text-6xl mt-12">
             <span style={{ color: "#f88e43" }}>SANKALP</span> 2025
           </p>
@@ -137,7 +137,10 @@ const Sankalp2025 = () => {
             alt="Event Highlight"
             className="w-full max-w-6xl"
           />
-          <div className="absolute bottom-6 left-6 text-white md:bottom-10 md:left-10">
+          <div
+            className="absolute bottom-6 left-6 text-white md:bottom-10 md:left-10"
+            ref={eventSectionRef}
+          >
             <motion.div
               className="text-left font-bold leading-none"
               initial={{ opacity: 0, y: 20 }}
@@ -236,20 +239,18 @@ const Sankalp2025 = () => {
         </section>
 
         {/* Interested Button & Heading */}
-        <div className="relative flex flex-col md:flex-row justify-center md:justify-end items-center mt-8 gap-4">
-          <motion.button
-            className="border border-orange-500 text-orange-500 px-6 py-1 text-base font-semibold md:px-6 md:py-2 md:text-lg 
+        <div className="relative flex flex-col md:flex-row justify-center md:justify-end items-center mt-10 gap-10">
+          <button
+            className=" border border-[#CBA690] text-[#CBA690] px-6 py-1 text-base font-semibold md:px-6 md:py-2 md:text-lg 
        flex justify-center items-center"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
             onClick={scrollToEvents}
           >
             INTERESTED ?
-          </motion.button>
+          </button>
 
           {/* OUR EVENTS Heading */}
           <motion.h2
-            className="text-[50px] md:text-[80px] font-extrabold uppercase tracking-tight leading-none text-center md:text-right"
+            className="text-[50px] md:text-[100px] font-extrabold uppercase tracking-tight leading-none text-center md:text-right"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
