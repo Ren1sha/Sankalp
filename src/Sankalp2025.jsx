@@ -19,11 +19,11 @@ const Sankalp2025 = () => {
   };
 
   return (
-    <div className=" w-screen bg-black text-white overflow-x-hidden relative ">
-      <div
-        className="flex flex-col items-center justify-center px-4 mt-auto mb-auto md:px-6 md:mt-[200px]"
-        ref={eventSectionRef1}
-      >
+    <div
+      className=" w-screen bg-black text-white overflow-x-hidden relative"
+      ref={eventSectionRef1}
+    >
+      <div className="flex flex-col items-center justify-center px-4 mt-auto mb-auto md:px-6 md:mt-[200px]">
         <motion.img
           src="/components/header.png"
           alt="Sankalp 2025"
@@ -99,8 +99,8 @@ const Sankalp2025 = () => {
         </div>
       </div>
 
-      <section className="px-4 md:px-8 ">
-        <div
+      <section className="px-2 md:px-8 ">
+        {/*  <div
           className="flex flex-row justify-end mt-10
          mr-10  md:mt-60"
         >
@@ -115,8 +115,8 @@ const Sankalp2025 = () => {
             Get ready for an electrifying blend of knowledge, culture, and
             entertainment – SANKALP 2025 is here to ignite your passion!..
           </div>
-        </div>
-        <div className="flex flex-row  gap-40  max-sm:flex-col max-sm:gap-1 ">
+        </div> */}
+        <div className="flex flex-row mt-10 gap-40  max-sm:flex-col max-sm:gap-1 ">
           <p className="text-[20px] font-extrabold md:text-6xl mt-12">
             <span style={{ color: "#f88e43" }}>SANKALP</span> 2025
           </p>
